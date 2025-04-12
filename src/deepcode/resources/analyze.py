@@ -49,6 +49,7 @@ class AnalyzeResource(SyncAPIResource):
         *,
         code: str,
         language: str,
+        options: analyze_analyze_source_code_params.Options | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -57,12 +58,14 @@ class AnalyzeResource(SyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> AnalyzeAnalyzeSourceCodeResponse:
         """
-        Sends source code for static analysis.
+        Sends source code for static analysis and optimization insights.
 
         Args:
           code: Source code to analyze
 
-          language: Programming language (e.g., python, javascript)
+          language: Programming language (e.g., python, javascript, rust)
+
+          options: Optional analysis parameters
 
           extra_headers: Send extra headers
 
@@ -78,6 +81,7 @@ class AnalyzeResource(SyncAPIResource):
                 {
                     "code": code,
                     "language": language,
+                    "options": options,
                 },
                 analyze_analyze_source_code_params.AnalyzeAnalyzeSourceCodeParams,
             ),
@@ -113,6 +117,7 @@ class AsyncAnalyzeResource(AsyncAPIResource):
         *,
         code: str,
         language: str,
+        options: analyze_analyze_source_code_params.Options | NotGiven = NOT_GIVEN,
         # Use the following arguments if you need to pass additional parameters to the API that aren't available via kwargs.
         # The extra values given here take precedence over values defined on the client or passed to this method.
         extra_headers: Headers | None = None,
@@ -121,12 +126,14 @@ class AsyncAnalyzeResource(AsyncAPIResource):
         timeout: float | httpx.Timeout | None | NotGiven = NOT_GIVEN,
     ) -> AnalyzeAnalyzeSourceCodeResponse:
         """
-        Sends source code for static analysis.
+        Sends source code for static analysis and optimization insights.
 
         Args:
           code: Source code to analyze
 
-          language: Programming language (e.g., python, javascript)
+          language: Programming language (e.g., python, javascript, rust)
+
+          options: Optional analysis parameters
 
           extra_headers: Send extra headers
 
@@ -142,6 +149,7 @@ class AsyncAnalyzeResource(AsyncAPIResource):
                 {
                     "code": code,
                     "language": language,
+                    "options": options,
                 },
                 analyze_analyze_source_code_params.AnalyzeAnalyzeSourceCodeParams,
             ),

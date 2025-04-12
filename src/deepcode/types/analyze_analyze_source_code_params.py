@@ -2,9 +2,11 @@
 
 from __future__ import annotations
 
-from typing_extensions import Required, TypedDict
+from typing_extensions import Required, Annotated, TypedDict
 
-__all__ = ["AnalyzeAnalyzeSourceCodeParams"]
+from .._utils import PropertyInfo
+
+__all__ = ["AnalyzeAnalyzeSourceCodeParams", "Options"]
 
 
 class AnalyzeAnalyzeSourceCodeParams(TypedDict, total=False):
@@ -12,4 +14,15 @@ class AnalyzeAnalyzeSourceCodeParams(TypedDict, total=False):
     """Source code to analyze"""
 
     language: Required[str]
-    """Programming language (e.g., python, javascript)"""
+    """Programming language (e.g., python, javascript, rust)"""
+
+    options: Options
+    """Optional analysis parameters"""
+
+
+class Options(TypedDict, total=False):
+    deep: bool
+    """Enable deep learning-based semantic analysis"""
+
+    performance_hints: Annotated[bool, PropertyInfo(alias="performanceHints")]
+    """Provide performance improvement hints"""

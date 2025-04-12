@@ -13,7 +13,10 @@ class Issue(BaseModel):
 
     message: Optional[str] = None
 
-    severity: Optional[Literal["info", "warning", "error"]] = None
+    severity: Optional[Literal["info", "warning", "error", "critical"]] = None
+
+    suggestion: Optional[str] = None
+    """AI-generated suggestion to resolve the issue"""
 
 
 class AnalyzeAnalyzeSourceCodeResponse(BaseModel):
