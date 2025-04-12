@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0 (2025-04-12)
+
+Full Changelog: [v0.1.0-alpha.2...v1.0.0](https://github.com/deepcode-ai/deepcode-python/compare/v0.1.0-alpha.2...v1.0.0)
+
+### Chores
+
+* update SDK settings ([5065102](https://github.com/deepcode-ai/deepcode-python/commit/50651029711dcc526d244d0519ab456e4caf1aed))
+
 ## 0.1.0-alpha.2 (2025-04-12)
 
 Full Changelog: [v0.1.0-alpha.1...v0.1.0-alpha.2](https://github.com/deepcode-ai/deepcode-python/compare/v0.1.0-alpha.1...v0.1.0-alpha.2)
