@@ -25,7 +25,7 @@ from ._utils import (
     get_async_library,
 )
 from ._version import __version__
-from .resources import analyze
+from .resources import status, analyze
 from ._streaming import Stream as Stream, AsyncStream as AsyncStream
 from ._exceptions import APIStatusError
 from ._base_client import (
@@ -48,6 +48,7 @@ __all__ = [
 
 class Deepcode(SyncAPIClient):
     analyze: analyze.AnalyzeResource
+    status: status.StatusResource
     with_raw_response: DeepcodeWithRawResponse
     with_streaming_response: DeepcodeWithStreamedResponse
 
@@ -102,6 +103,7 @@ class Deepcode(SyncAPIClient):
         )
 
         self.analyze = analyze.AnalyzeResource(self)
+        self.status = status.StatusResource(self)
         self.with_raw_response = DeepcodeWithRawResponse(self)
         self.with_streaming_response = DeepcodeWithStreamedResponse(self)
 
@@ -225,6 +227,7 @@ class Deepcode(SyncAPIClient):
 
 class AsyncDeepcode(AsyncAPIClient):
     analyze: analyze.AsyncAnalyzeResource
+    status: status.AsyncStatusResource
     with_raw_response: AsyncDeepcodeWithRawResponse
     with_streaming_response: AsyncDeepcodeWithStreamedResponse
 
@@ -279,6 +282,7 @@ class AsyncDeepcode(AsyncAPIClient):
         )
 
         self.analyze = analyze.AsyncAnalyzeResource(self)
+        self.status = status.AsyncStatusResource(self)
         self.with_raw_response = AsyncDeepcodeWithRawResponse(self)
         self.with_streaming_response = AsyncDeepcodeWithStreamedResponse(self)
 
@@ -403,21 +407,25 @@ class AsyncDeepcode(AsyncAPIClient):
 class DeepcodeWithRawResponse:
     def __init__(self, client: Deepcode) -> None:
         self.analyze = analyze.AnalyzeResourceWithRawResponse(client.analyze)
+        self.status = status.StatusResourceWithRawResponse(client.status)
 
 
 class AsyncDeepcodeWithRawResponse:
     def __init__(self, client: AsyncDeepcode) -> None:
         self.analyze = analyze.AsyncAnalyzeResourceWithRawResponse(client.analyze)
+        self.status = status.AsyncStatusResourceWithRawResponse(client.status)
 
 
 class DeepcodeWithStreamedResponse:
     def __init__(self, client: Deepcode) -> None:
         self.analyze = analyze.AnalyzeResourceWithStreamingResponse(client.analyze)
+        self.status = status.StatusResourceWithStreamingResponse(client.status)
 
 
 class AsyncDeepcodeWithStreamedResponse:
     def __init__(self, client: AsyncDeepcode) -> None:
         self.analyze = analyze.AsyncAnalyzeResourceWithStreamingResponse(client.analyze)
+        self.status = status.AsyncStatusResourceWithStreamingResponse(client.status)
 
 
 Client = Deepcode
