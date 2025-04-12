@@ -28,6 +28,19 @@ class TestAnalyze:
 
     @pytest.mark.skip()
     @parametrize
+    def test_method_analyze_source_code_with_all_params(self, client: Deepcode) -> None:
+        analyze = client.analyze.analyze_source_code(
+            code="code",
+            language="language",
+            options={
+                "deep": True,
+                "performance_hints": True,
+            },
+        )
+        assert_matches_type(AnalyzeAnalyzeSourceCodeResponse, analyze, path=["response"])
+
+    @pytest.mark.skip()
+    @parametrize
     def test_raw_response_analyze_source_code(self, client: Deepcode) -> None:
         response = client.analyze.with_raw_response.analyze_source_code(
             code="code",
@@ -64,6 +77,19 @@ class TestAsyncAnalyze:
         analyze = await async_client.analyze.analyze_source_code(
             code="code",
             language="language",
+        )
+        assert_matches_type(AnalyzeAnalyzeSourceCodeResponse, analyze, path=["response"])
+
+    @pytest.mark.skip()
+    @parametrize
+    async def test_method_analyze_source_code_with_all_params(self, async_client: AsyncDeepcode) -> None:
+        analyze = await async_client.analyze.analyze_source_code(
+            code="code",
+            language="language",
+            options={
+                "deep": True,
+                "performance_hints": True,
+            },
         )
         assert_matches_type(AnalyzeAnalyzeSourceCodeResponse, analyze, path=["response"])
 
