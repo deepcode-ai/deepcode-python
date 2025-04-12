@@ -10,7 +10,7 @@ It is generated with [Stainless](https://www.stainless.com/).
 
 ## Documentation
 
-The REST API documentation can be found on [docs.deepcode.com](https://docs.deepcode.com). The full API of this library can be found in [api.md](api.md).
+The REST API documentation can be found on [deepcode-ai.github.io](https://deepcode-ai.github.io/docs). The full API of this library can be found in [api.md](api.md).
 
 ## Installation
 
