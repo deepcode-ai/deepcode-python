@@ -16,7 +16,7 @@ The REST API documentation can be found on [deepcode-ai.github.io](https://deepc
 
 ```sh
 # install from PyPI
-pip install --pre deepcoder
+pip install deepcoder
 ```
 
 ## Usage
