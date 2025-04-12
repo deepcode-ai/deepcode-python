@@ -1,0 +1,4 @@
+configured_endpoints: 1
+openapi_spec_url: https://storage.googleapis.com/stainless-sdk-openapi-specs/deepcode%2Fdeepcode-cb73daefbe1aa43b956bb15aa3280e85d8c43af3691a1a4dba4fc7ac2496318e.yml
+openapi_spec_hash: e7da9acc57d6f3d71eedff8f71a1be8c
+config_hash: 9140ff34edb3dd1492bb4ee3f7d07fff
