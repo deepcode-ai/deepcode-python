@@ -1,5 +1,16 @@
 # Changelog
 
+## 2.0.0 (2025-04-17)
+
+Full Changelog: [v1.0.0...v2.0.0](https://github.com/deepcode-ai/deepcode-python/compare/v1.0.0...v2.0.0)
+
+### Chores
+
+* **client:** minor internal fixes ([b5c8024](https://github.com/deepcode-ai/deepcode-python/commit/b5c802419bc5af1e8b250931e5afa0ee0582854b))
+* **internal:** base client updates ([d054499](https://github.com/deepcode-ai/deepcode-python/commit/d054499ae1b53f9d7f11c8b8aa523e4cf9ed4c52))
+* **internal:** bump pyright version ([3053619](https://github.com/deepcode-ai/deepcode-python/commit/3053619cde6ed3c3efa774f0a8adb44cc2972a10))
+* **internal:** update pyright settings ([fa02f60](https://github.com/deepcode-ai/deepcode-python/commit/fa02f6008ecda5c33dc64b024e40e3c6dfdbf067))
+
 ## 1.0.0 (2025-04-12)
 
 Full Changelog: [v0.1.0-alpha.2...v1.0.0](https://github.com/deepcode-ai/deepcode-python/compare/v0.1.0-alpha.2...v1.0.0)
