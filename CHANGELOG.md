@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.0.1 (2025-04-19)
+
+Full Changelog: [v2.0.0...v2.0.1](https://github.com/deepcode-ai/deepcode-python/compare/v2.0.0...v2.0.1)
+
+### Chores
+
+* **internal:** update models test ([eeb26d7](https://github.com/deepcode-ai/deepcode-python/commit/eeb26d7f7bb7c7767616b914169391a1aa0ee9f8))
+
 ## 2.0.0 (2025-04-17)
 
 Full Changelog: [v1.0.0...v2.0.0](https://github.com/deepcode-ai/deepcode-python/compare/v1.0.0...v2.0.0)
