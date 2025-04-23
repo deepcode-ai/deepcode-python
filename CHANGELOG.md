@@ -1,5 +1,22 @@
 # Changelog
 
+## 2.0.1 (2025-04-23)
+
+Full Changelog: [v2.0.0...v2.0.1](https://github.com/deepcode-ai/deepcode-python/compare/v2.0.0...v2.0.1)
+
+### Bug Fixes
+
+* **pydantic v1:** more robust ModelField.annotation check ([6e3e8b7](https://github.com/deepcode-ai/deepcode-python/commit/6e3e8b737f65d60f4087b435e388d8d8b8e61d71))
+
+
+### Chores
+
+* **ci:** add timeout thresholds for CI jobs ([71ae791](https://github.com/deepcode-ai/deepcode-python/commit/71ae791e030afd09bbfbca68b2926cc4e51a5869))
+* **internal:** fix list file params ([2899819](https://github.com/deepcode-ai/deepcode-python/commit/2899819d1a93be2b0dcc7f6dcfde07b10ac189be))
+* **internal:** import reformatting ([ba37749](https://github.com/deepcode-ai/deepcode-python/commit/ba377490733f895db091245d4499f6b3764d3053))
+* **internal:** refactor retries to not use recursion ([ac78b9e](https://github.com/deepcode-ai/deepcode-python/commit/ac78b9ecf7ba5d1bfc7962ad0fdd7a978a3186ba))
+* **internal:** update models test ([eeb26d7](https://github.com/deepcode-ai/deepcode-python/commit/eeb26d7f7bb7c7767616b914169391a1aa0ee9f8))
+
 ## 2.0.0 (2025-04-17)
 
 Full Changelog: [v1.0.0...v2.0.0](https://github.com/deepcode-ai/deepcode-python/compare/v1.0.0...v2.0.0)
