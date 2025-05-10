@@ -1,5 +1,21 @@
 # Changelog
 
+## 2.0.2 (2025-05-10)
+
+Full Changelog: [v2.0.1...v2.0.2](https://github.com/deepcode-ai/deepcode-python/compare/v2.0.1...v2.0.2)
+
+### Bug Fixes
+
+* **package:** support direct resource imports ([0b82f51](https://github.com/deepcode-ai/deepcode-python/commit/0b82f51eb5e9872b3878f5d3f90ed133aba01d89))
+
+
+### Chores
+
+* broadly detect json family of content-type headers ([19a4630](https://github.com/deepcode-ai/deepcode-python/commit/19a4630c223ccf62f1455d731a7ee6dc4b857fa6))
+* **ci:** only use depot for staging repos ([3455d4c](https://github.com/deepcode-ai/deepcode-python/commit/3455d4c1e104e7ed692981900cf6b3b16b9f8c2c))
+* **internal:** avoid errors for isinstance checks on proxies ([dc34a0d](https://github.com/deepcode-ai/deepcode-python/commit/dc34a0d81a4494978c8dd7de0ed1a0cf62d6178b))
+* **internal:** codegen related update ([b71e1a1](https://github.com/deepcode-ai/deepcode-python/commit/b71e1a1173375c654ed9538599e56d13abfa355c))
+
 ## 2.0.1 (2025-04-23)
 
 Full Changelog: [v2.0.0...v2.0.1](https://github.com/deepcode-ai/deepcode-python/compare/v2.0.0...v2.0.1)
